@@ -1,0 +1,628 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+section{
+    width: 100%;
+    height: 100vh;
+    background-image: url(Desain\ tanpa\ judul.png);
+    background-size: cover;
+    background-position: center;
+}
+
+section nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 0 10px #089da1;
+    background: #fff;
+    position: fixed;
+    left: 0;
+    z-index: 100;
+
+}
+
+section nav .logo img{
+    width: 100px;
+    cursor: pointer;
+    margin: 8px 0;
+}
+
+section nav ul{
+    list-style: none;
+}
+section nav li{
+   display: inline-block;
+   padding: 0 10px; 
+}
+section nav li a{
+   text-decoration: none;
+   color: #000; 
+}
+section nav li a:hover{
+    color: #089da1;
+}
+section nav .social_icon i{
+    margin: 0 1px;
+    font-size: 18px;
+}
+section nav .social_icon i:hover{
+    color: #089da1;
+    cursor: pointer;
+}
+
+section .main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    top: 10%;
+}
+section .main h1{
+    position: relative;
+    font-size: 55px;
+    top: 80px;
+    left: 25px;
+}
+
+section .main h1 span{
+    color: #089da1;
+}
+
+section .main p{
+    width: 650px;
+    text-align: justify;
+    line-height: 22px;
+    position: relative;
+    top: 125px;
+    left: 25px;
+}
+section .main_tag .main_btn{
+    background: #089da1;
+    padding: 10px 20px;
+    position: relative;
+    top: 200px; 
+    left: 25px;
+    color: #fff;  
+    text-decoration: none; 
+}
+
+section .main .main_img img{
+    width: 780px;
+    position: relative;
+    top: 90px;
+    left: 20px;
+}
+
+
+
+
+/*services*/
+
+.services{
+    width: 100%;
+    height: auto;
+    margin: 35px 0;
+}
+
+.services .services_box{
+    width: 95%;
+    margin:  0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.services .services_box .services_card{
+    text-align: center;
+    width: 310px;
+    height: auto;
+    box-shadow: 0 0 8px #089da1;
+    padding: 15px 10px;
+}
+
+.services .services_box .services_card i{
+    color: #089da1;
+    font-size: 45px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+.services .services_box .services_card h3{
+    margin-bottom: 10px;
+}
+
+
+
+
+/*about*/
+
+.about{
+   width: 100%;
+   height: auto;
+   padding: 20px;
+   display: flex;
+   align-items: center;
+   justify-content: space-around
+}
+
+.about .about_image img{
+    width: 800px;
+}
+
+.about .about_tag h1{
+    font-size: 50px;
+    position: relative;
+    bottom: 35px;
+}
+
+.about .about_tag p{
+    line-height: 22px;
+    width: 650px;
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+.about .about_tag .about_btn{
+    padding: 10px 20px;
+    background: #089da1;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    top: 50px;
+}
+
+/*featured-books*/
+.featured-books{
+    width: 100%;
+    padding: 50px 20px; /* Menambah padding */
+    text-align: center; /* Memusatkan judul */
+}
+
+.featured-books h1{
+    font-size: 40px;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.featured-books .featured-books_box{
+    display: flex;
+    justify-content: center; /* Memusatkan kartu buku */
+    flex-wrap: wrap; /* Agar kartu bisa wrap di layar kecil */
+    gap: 30px; /* Jarak antar card */
+}
+
+.featured-books .featured-books_card{
+    width: 300px; /* Lebar card */
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Shadow yang lebih halus */
+    overflow: hidden;
+    transition: 0.3s; /* Efek transisi untuk hover */
+}
+
+.featured-books .featured-books_card:hover{
+    transform: translateY(-10px); /* Efek hover naik ke atas */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Shadow saat hover */
+}
+
+.featured-books .featured-books_img{
+    width: 100%;
+    height: 250px; /* Tinggi gambar */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.featured-books .featured-books_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Agar gambar mengisi area tanpa terdistorsi */
+}
+
+.featured-books .featured-books_tag{
+    padding: 20px;
+    text-align: left; /* Teks dalam tag rata kiri */
+}
+
+.featured-books .featured-books_tag h2{
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.featured-books .featured-books_tag .writer{
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 8px;
+}
+
+.featured-books .featured-books_tag .categories{
+    font-size: 14px;
+    color: #999;
+    margin-bottom: 15px;
+    display: -webkit-box; /* Untuk menampilkan ellipsis */
+    -webkit-line-clamp: 2; /* Batasi 2 baris */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.featured-books .featured-books_tag .book_price{
+    font-size: 20px;
+    color: #089da1;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.featured-books .featured-books_tag .book_price sub{
+    font-size: 14px;
+    color: #999;
+    text-decoration: line-through;
+    margin-left: 5px;
+}
+
+.featured-books .featured-books_tag .f_btn{
+    display: inline-block;
+    padding: 10px 20px;
+    background: #089da1;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.featured-books .featured-books_tag .f_btn:hover{
+    background: #067c7e;
+}
+
+
+---
+
+/* Arrivals */
+.arrivals{
+    width: 100%;
+    padding: 50px 20px;
+    text-align: center;
+    background: #f8f8f8; /* Menambah warna latar belakang */
+}
+
+.arrivals h1{
+    font-size: 40px;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.arrivals_box{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.arrivals_card{
+    width: 280px; /* Ukuran card agar bisa masuk lebih banyak */
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.arrivals_card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.arrivals_img{
+    width: 100%;
+    height: 220px; /* Tinggi gambar */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrivals_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.arrivals_tag{
+    padding: 20px;
+    text-align: left;
+}
+
+.arrivals_tag h2{
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.arrivals_tag .writer{
+    font-size: 15px;
+    color: #777;
+    margin-bottom: 12px;
+}
+
+.arrivals_tag .book_price{
+    font-size: 18px;
+    color: #089da1;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.arrivals_tag .f_btn{
+    display: inline-block;
+    padding: 8px 18px;
+    background: #089da1;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.arrivals_tag .f_btn:hover{
+    background: #067c7e;
+}
+
+
+---
+
+/* Reviews */
+.reviews{
+    width: 100%;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.reviews h1{
+    font-size: 40px;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.reviews_box{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.reviews_card{
+    width: 350px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    transition: 0.3s;
+    text-align: left; /* Teks dalam review card rata kiri */
+}
+
+.reviews_card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.reviews_profile{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.reviews_profile img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+    border: 3px solid #089da1;
+}
+
+.reviews_name strong{
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.reviews_star i{
+    color: gold;
+    font-size: 18px;
+}
+
+.reviews_text p{
+    font-size: 16px;
+    color: #555;
+    line-height: 24px;
+}
+
+---
+
+/* Footer */
+footer{
+    width: 100%;
+    background: #222;
+    padding: 50px 20px 20px;
+    color: #eee;
+    text-align: center;
+}
+
+.footer_main{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.footer_main .tag{
+    margin: 20px;
+    min-width: 200px;
+}
+
+.footer_main .tag h2{
+    font-size: 22px;
+    color: #089da1;
+    margin-bottom: 20px;
+}
+
+.footer_main .tag a{
+    display: block;
+    text-decoration: none;
+    color: #aaa;
+    margin-bottom: 10px;
+    font-size: 15px;
+    transition: 0.2s;
+}
+
+.footer_main .tag a i{
+    margin-right: 8px;
+    color: #089da1;
+}
+
+.footer_main .tag a:hover{
+    color: #fff;
+    transform: translateX(5px);
+}
+
+.footer_main .tag .social_icon a i{
+    font-size: 22px;
+    margin-right: 15px;
+    color: #eee;
+    transition: 0.2s;
+}
+
+.footer_main .tag .social_icon a i:hover{
+    color: #089da1;
+    transform: scale(1.1);
+}
+
+.footer_main .tag .social_icon{
+    display: flex; /* Mengatur ikon agar inline */
+    justify-content: flex-start;
+}
+
+
+.end{
+    font-size: 14px;
+    color: #888;
+    margin-top: 30px;
+}
+
+.end span{
+    color: #089da1;
+    font-weight: bold;
+}
+
+
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    body {
+        overflow-x: hidden; /* Mencegah scroll horizontal */
+    }
+    section .main{
+        flex-direction: column;
+        text-align: center;
+        top: 0;
+        padding-top: 120px; /* Menyesuaikan padding agar tidak tertutup nav */
+    }
+
+    section .main h1{
+        position: static;
+        font-size: 45px;
+        margin-bottom: 20px;
+    }
+
+    section .main p{
+        width: 90%;
+        position: static;
+        margin-bottom: 30px;
+    }
+
+    section .main_tag .main_btn{
+        position: static;
+        margin-bottom: 50px;
+    }
+
+    section .main .main_img img{
+        width: 80%;
+        height: auto;
+        position: static;
+    }
+
+    .services .services_box,
+    .about,
+    .featured-books .featured-books_box,
+    .arrivals_box,
+    .reviews_box{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .services .services_box .services_card,
+    .featured-books .featured-books_card,
+    .arrivals_card,
+    .reviews_card{
+        width: 90%; /* Sesuaikan lebar card agar lebih responsif */
+        margin-bottom: 20px;
+    }
+
+    .about .about_tag{
+        padding-left: 0;
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .about .about_tag h1{
+        font-size: 40px;
+    }
+
+    .about .about_tag p{
+        width: 90%;
+        margin: 0 auto 20px;
+    }
+
+    .footer_main{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer_main .tag{
+        text-align: center;
+        margin: 15px 0;
+    }
+
+    .footer_main .tag .social_icon{
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    section nav ul{
+        display: none; /* Sembunyikan navigasi utama di mobile, bisa diganti dengan hamburger menu */
+    }
+
+    section nav .social-icon{
+        margin-left: auto; /* Dorong ikon ke kanan */
+    }
+    
+    section nav .social-icon i{
+        font-size: 22px;
+        margin: 0 10px;
+    }
+
+    section .main h1{
+        font-size: 35px;
+    }
+
+    .about .about_image img{
+        width: 95%;
+    }
+}
